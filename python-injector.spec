@@ -36,7 +36,7 @@ Summary:        Documentation for Python dependency injection framework
 BuildRequires:  python3dist(sphinx)
 BuildRequires:  python3dist(typing-extensions)
 
-%description -n python3-%{pypi_name}-doc
+%description -n python-%{pypi_name}-doc
 Dependency injection as a formal pattern is less useful in Python than in other
 languages, primarily due to its support for keyword arguments, the ease with
 which objects can be mocked, and its dynamic nature.
