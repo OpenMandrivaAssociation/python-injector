@@ -30,16 +30,16 @@ While being inspired by Guice, it does not slavishly replicate its API.
 Providing a Pythonic API trumps faithfulness.}
 
 
-%package -n     python-%{pypi_name}-doc
-Summary:        Documentation for Python dependency injection framework
-
-BuildRequires:  python3dist(sphinx)
-BuildRequires:  python3dist(typing-extensions)
-
-%description -n python-%{pypi_name}-doc
-Dependency injection as a formal pattern is less useful in Python than in other
-languages, primarily due to its support for keyword arguments, the ease with
-which objects can be mocked, and its dynamic nature.
+#package -n     python-%{pypi_name}-doc
+#Summary:        Documentation for Python dependency injection framework
+#
+#BuildRequires:  python3dist(sphinx)
+#BuildRequires:  python3dist(typing-extensions)
+#
+#description -n python-%{pypi_name}-doc
+#Dependency injection as a formal pattern is less useful in Python than in other
+#languages, primarily due to its support for keyword arguments, the ease with
+#which objects can be mocked, and its dynamic nature.
 
 %prep
 %autosetup -n %{pypi_name}-%{version}
@@ -52,7 +52,7 @@ rm -rf %{pypi_name}.egg-info
 %py_build
 
 # Generate html docs
-PYTHONPATH=${PWD} sphinx-build-3 docs html
+#PYTHONPATH=${PWD} sphinx-build-3 docs html
 
 # Remove the sphinx-build leftovers
 rm -rf html/.{doctrees,buildinfo}
@@ -68,5 +68,5 @@ rm -rf html/.{doctrees,buildinfo}
 %{python_sitelib}/%{pypi_name}/
 %{python_sitelib}/%{pypi_name}-%{version}-py%{python_version}.egg-info/
 
-%files -n python-%{pypi_name}-doc
-%doc html
+#files -n python-%{pypi_name}-doc
+#doc html
