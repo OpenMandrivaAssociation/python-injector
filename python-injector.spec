@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.18.4
-Release:        1
+Release:        2
 Summary:        Python dependency injection framework inspired by Guice
 
 License:        BSD
