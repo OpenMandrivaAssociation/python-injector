@@ -2,8 +2,8 @@
 %global pypi_name injector
 
 Name:		python-%{pypi_name}
-Version:	0.18.4
-Release:	3
+Version:	0.20.0
+Release:	1
 Summary:	Python dependency injection framework inspired by Guice
 License:	BSD
 URL:		https://github.com/alecthomas/injector
