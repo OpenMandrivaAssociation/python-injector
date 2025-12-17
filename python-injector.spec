@@ -10,7 +10,8 @@ URL:		https://github.com/alecthomas/injector
 Source0:	%{url}/archive/%{version}/%{pypi_name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
-BuildRequires:	python3dist(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:  python%{pyver}dist(pip)
 %{?python_provide:%python_provide python-%{pypi_name}}
 
 %description
