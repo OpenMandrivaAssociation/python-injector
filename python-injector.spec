@@ -49,4 +49,4 @@ rm -rf html/.{doctrees,buildinfo}
 %doc README.md
 %dir %{python_sitelib}/%{pypi_name}
 %{python_sitelib}/%{pypi_name}/*
-%{python_sitelib}/%{pypi_name}-%{version}-py*.egg-info
+%{python_sitelib}/%{pypi_name}-*
