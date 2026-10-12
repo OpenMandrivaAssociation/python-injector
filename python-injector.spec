@@ -2,9 +2,10 @@
 
 Name:		python-injector
 Version:	0.24.0
-Release:	1
+Release:	2
 Summary:	Python dependency injection framework inspired by Guice
 License:	BSD
+Group:	Development/Python
 URL:		https://github.com/alecthomas/injector
 Source0:	%{URL}/archive/%{version}/%{name}-%{version}.tar.gz
 
